@@ -3,7 +3,7 @@
 ## Quick Install
 
 1.  Make sure that you have Node.js >=v18 and npm v8 or above installed.
-2.  Clone this repo using `git clone `
+2.  Clone this repo using `git clone git@github.com:duyanh4788/vrillar_vietnam_craw_data.git`
 3.  checkout branch develop and development
 4.  Copy file `.env.example` to `.env`
 5.  Run `npm run install || yarn install` in order to install dependencies.<br />
