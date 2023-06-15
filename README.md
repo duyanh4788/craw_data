@@ -3,7 +3,7 @@
 ## Quick Install
 
 1.  Make sure that you have Node.js >=v18 and npm v8 or above installed.
-2.  Clone this repo using `git clone git@github.com:SanaeChau/Lucete_Global_Campus_BE-Nodejs.git`
+2.  Clone this repo using `git@github.com:duyanh4788/vrillar_vietnam_craw_data.git`
 3.  Move to the appropriate directory: `cd <YOUR_PROJECT_NAME>`.<br />
 4.  checkout branch develop and development
 5.  Copy file `example.env.dev` to `.env` or contact with team
