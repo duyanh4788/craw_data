@@ -1,0 +1,24 @@
+version: '3.4'
+
+services:
+  app:
+    image: vrillar_vietnam:v1
+    build: .
+    ports:
+      - '8000:8000'
+    env_file: .env
+    environment:
+      - APP_NAME=${APP_NAME}
+      - APP_ENV=${APP_ENV}
+      - APP_URL=${APP_URL}
+      - APP_PORT=${APP_PORT}
+      - REDIS_URL=${REDIS_URL}
+      - MAX_REQUEST=${MAX_REQUEST}
+      - DB_CONNECTION=${DB_CONNECTION}
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_DATABASE=${DB_DATABASE}
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD}
+    depends_on:
+      - redis
