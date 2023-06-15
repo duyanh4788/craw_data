@@ -28,13 +28,7 @@ class SuccessResponse {
   public message: string;
   public option: any;
 
-  constructor({
-    status = TypeResponse.SUCCESS as string,
-    code = StatusCode.SUCCESS,
-    data = null,
-    message = '',
-    option = null
-  }) {
+  constructor({ status = TypeResponse.SUCCESS as string, code = StatusCode.SUCCESS, data = null, message = '', option = null }) {
     this.status = status;
     this.code = code || 200;
     this.data = data || null;

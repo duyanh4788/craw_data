@@ -31,7 +31,7 @@ class App {
     this.App.use(seesion(sessionOptions));
     this.App.use(
       cors({
-        origin: process.env.END_POINT_HOME,
+        origin: process.env.APP_URL_SERVER,
         credentials: true
       })
     );

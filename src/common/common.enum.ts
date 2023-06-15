@@ -1,4 +1,6 @@
-export enum StatusCreate {
-  IN_ACTIVE = "IN_ACTIVE",
-  ACTIVE = "ACTIVE",
+export enum TypeModel {
+  RACES = 'races',
+  DRIVERS = 'drivers',
+  TEAM = 'team',
+  FASTEST_LAP = 'fastest-laps'
 }

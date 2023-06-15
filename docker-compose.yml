@@ -8,17 +8,40 @@ services:
       - '8000:8000'
     env_file: .env
     environment:
-      - APP_NAME=${APP_NAME}
-      - APP_ENV=${APP_ENV}
-      - APP_URL=${APP_URL}
-      - APP_PORT=${APP_PORT}
-      - REDIS_URL=${REDIS_URL}
-      - MAX_REQUEST=${MAX_REQUEST}
-      - DB_CONNECTION=${DB_CONNECTION}
-      - DB_HOST=${DB_HOST}
-      - DB_PORT=${DB_PORT}
-      - DB_DATABASE=${DB_DATABASE}
-      - DB_USERNAME=${DB_USERNAME}
-      - DB_PASSWORD=${DB_PASSWORD}
+      - APP_NAME=CRAW_F1
+      - APP_ENV=dev
+      - APP_PORT_SERVER=8000
+      - APP_URL_SERVER=http://localhost:8000
+      - STATUS_CRAW_DATA=OFF
+      - REDIS_URL=redis://redis:6381
+      - RABBITMQ_URL=amqp://rabbitmq
+      - DB_CONNECTION=mysql
+      - DB_HOST=db
+      - DB_PORT=3310
+      - DB_DATABASE=F1
+      - DB_USERNAME=root
+      - DB_PASSWORD=12345
     depends_on:
+      - db
       - redis
+      - rabbitmq
+
+  db:
+    image: mysql:latest
+    container_name: mysql
+    command: --port=3310
+    volumes:
+      - .docker/data/db:/data
+    restart: always
+    ports:
+      - '3310:3310'
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - '6381:6379'
+
+  rabbitmq:
+    image: rabbitmq:latest
+    container_name: rabbitmq

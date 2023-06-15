@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "2ee18658-7eba-423a-bb14-4399ffccda5a",
+		"name": "Virllar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17282698"
+	},
+	"item": [
+		{
+			"name": "craw data",
+			"item": [
+				{
+					"name": "craw-data-f1-result",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/craws/craw-data-f1-result",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"craws",
+								"craw-data-f1-result"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "driver",
+			"item": [
+				{
+					"name": "get list by value type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/drivers/get-lists/:type/:value",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"drivers",
+								"get-lists",
+								":type",
+								":value"
+							],
+							"variable": [
+								{
+									"key": "type",
+									"value": "seasonRaces"
+								},
+								{
+									"key": "value",
+									"value": "2023"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "teams",
+			"item": [
+				{
+					"name": "get list by value type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/teams/get-lists/:type/:value",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"teams",
+								"get-lists",
+								":type",
+								":value"
+							],
+							"variable": [
+								{
+									"key": "type",
+									"value": "teamName"
+								},
+								{
+									"key": "value",
+									"value": "Merce"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "races",
+			"item": [
+				{
+					"name": "get list by value type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/races/get-lists/:type/:value",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"races",
+								"get-lists",
+								":type",
+								":value"
+							],
+							"variable": [
+								{
+									"key": "type",
+									"value": null
+								},
+								{
+									"key": "value",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "fastest-lap",
+			"item": [
+				{
+					"name": "get list by value type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/fastest-laps/get-lists/:type/:value",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"fastest-laps",
+								"get-lists",
+								":type",
+								":value"
+							],
+							"variable": [
+								{
+									"key": "type",
+									"value": null
+								},
+								{
+									"key": "value",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
