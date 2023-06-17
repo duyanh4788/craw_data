@@ -7,7 +7,7 @@ export class RabbitMQSenderClient {
 
   public async connect(): Promise<void> {
     try {
-      this.connection = await amqplib.connect(process.env.RABITMQ_URL);
+      this.connection = await amqplib.connect(process.env.RABBITMQ_URL);
       this.channel = await this.connection.createChannel();
     } catch (err) {
       logger.info(`RabbitMQ: connect`, err);

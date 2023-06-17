@@ -11,8 +11,8 @@
     _At this point you can see the example app at `http://localhost:8000`._
     Now you're ready to rumble!
 
-> You can run with docker or docker-compose <br
-> `$ docker-compose up -d --build` <br> > `$ docker-compose stop` <br>
+- You can run with docker or docker-compose
+  > `$ docker-compose build` <br> > `$ docker-compose up` <br>
 
 ## API Endpoints
 
@@ -20,7 +20,7 @@
 - Craw data: Current I have craw only page: https://www.formula1.com/en/results.html
   with 4 model : races, driver, teams, fastest-lap
 - Have 2 way craw: Job (ON/OFF), API
-- API craw data: {{host}}/craws/craw-data-f1-result
+- API craw data: {{host}}/craws/craw-data-f1-result (\*default get data 10 yeas)
 - Teams: search multi type && value
   {{host}}/teams/get-lists/:type/:value
   type/value

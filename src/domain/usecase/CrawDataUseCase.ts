@@ -18,7 +18,7 @@ export class CrawDataUseCase {
     if (!getIp) {
       getIp = await redisController.setRedis({ keyValue: ip, value: { isCraw: true } });
     }
-    const browser = await puppeteer.launch({ headless: 'new' });
+    const browser = await puppeteer.launch({ headless: 'new', args: ['--no-sandbox'] });
     const page = await browser.newPage();
     await page.goto('https://www.formula1.com/en/results.html');
     const dataYear = await page.evaluate(() => {
