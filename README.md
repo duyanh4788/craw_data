@@ -1,9 +1,9 @@
-# vrillar_vietnam NodeJS
+# craw_data NodeJS
 
 ## Quick Install
 
 1.  Make sure that you have Node.js >=v18 and npm v8 or above installed.
-2.  Clone this repo using `git clone git@github.com:duyanh4788/vrillar_vietnam_craw_data.git`
+2.  Clone this repo using `git clone git@github.com:duyanh4788/craw_data.git`
 3.  checkout branch develop and development
 4.  Copy file `.env.example` to `.env`
 5.  Run `npm run install || yarn install` in order to install dependencies.<br />
@@ -12,7 +12,10 @@
     Now you're ready to rumble!
 
 - You can run with docker or docker-compose
-  > `$ docker-compose build` <br> > `$ docker-compose up` <br>
+
+1. Copy file `.env.docker` to `.env`
+2. Run `$ docker-compose build`
+3. Run `$ docker-compose up`
 
 ## API Endpoints
 

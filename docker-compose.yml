@@ -38,7 +38,7 @@ services:
     restart: always
 
   app:
-    image: av/avrillar_vietnam:v1
+    image: av/craw_data:v1
     build: .
     ports:
       - '8000:8000'

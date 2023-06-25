@@ -1,5 +1,5 @@
 {
-    "name": "vrillar_vietnam",
+    "name": "craw_data",
     "version": "1.0.0",
     "description": "demo craw data from F1 with NodeJS, Express, MySql and TypeScript",
     "main": "src/server.ts",
